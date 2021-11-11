@@ -3,6 +3,8 @@ var player2_name = localStorage.getItem("player2_name");
 
 var player1_score = 0;
 var player2_score = 0;
+var actual_answer = 0;
+
 
 document.getElementById("player1_name").innerHTML = player1_name + " : ";
 document.getElementById("player2_name").innerHTML = player2_name + " : ";
@@ -16,7 +18,7 @@ document.getElementById("player_answer").innerHTML = "Answer Turn - " + player2_
 function send() {
     var number1 = document.getElementById("number1").value;
     var number2 = document.getElementById("number2").value;
-    var actual_answer = parseInt(number1) * parseInt(number2);
+    actual_answer = parseInt(number1) * parseInt(number2);
     console.log(actual_answer);
 
 
